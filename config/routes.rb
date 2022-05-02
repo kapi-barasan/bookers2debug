@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get "search" => "searches#search"
   get 'relationships/followings'
   get 'relationships/followers'
   root :to =>"homes#top"
